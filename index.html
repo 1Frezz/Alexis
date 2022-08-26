@@ -42,12 +42,180 @@
         </div>
       </nav>
     <main>
-        <div class="container-fluid">
-        <img src="/assets/img/main-banner.jpg" alt="">
-        <div id="found-banner">
-            <img src="/assets/img/un-pais-por-recorrer.png" width="700px">
+      <style>
+        .containerdiv {position: relative; } 
+        .cornerimage { position: absolute; top: 0; right: 0; } 
+        </style>
+        
+        <div class="containerdiv">
+            <img src="/assets/img/main-banner.jpg" width="100%" height="900px">
+            <img class="cornerimage" src="/assets/img/un-pais-por-recorrer.png" width="700px">
+        <div> 
+        <div class="container-fluid d-flex justify-content-center mt-2">
+          <h1>Nuestros Destinos!</h1>
         </div>
-    </div>
+
+        <!-- Accordion -->
+
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+div.c{
+  position: relative;
+  margin:2em;
+}
+input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+h2{
+  color:black;
+  padding:1em;
+  position: relative;
+}
+label::before{
+  content:"";
+  display: inline-block;
+  border: 15px solid transparent;
+  border-left:20px solid white;
+}
+label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+div.p{
+  max-height:0px;
+  overflow: hidden;
+  transition:max-height 0.5s;
+  background-color: white;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+div.p p {
+  padding:2em;
+}
+input:checked ~ h2 label::before{
+  border-left:15px solid transparent;
+  border-top:20px solid white;
+  margin-top:12px;
+  margin-right:10px;
+}
+input:checked ~ h2 ~ div.p{
+  max-height:100px;
+}
+a{
+  color:steelblue;
+}
+</style>
+
+        <div class="c">
+          <input type="checkbox" id="faq-1">
+          <h2><label for="faq-1">FSL DE OCTUBRE</label></h2>
+          <div class="p">
+            <p>This a very very simple accordion.</p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-2">
+          <h2><label for="faq-2">SAN MARTIN DE LOS ANDES</label></h2>
+          <div class="p">
+            <p>Yes with pure CSS and HTML.</p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">BARILOCHE</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">MENDOZA CON TERMAS DE CACHEUTA</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">TALAMPAYA</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">TANDIL - MAR DEL PLATA</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">VILLA CARLOS PAZ</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">MERLO</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">MAR DEL PLATA</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">CATARATAS DEL IGUAZÚ</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">SALTA</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <input type="checkbox" id="faq-3">
+          <h2><label for="faq-3">NORTE CON CUESTA DE LIPAN</label></h2>
+          <div class="p">
+            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
+            </p>
+          </div>
+        </div>
+
     </main>
         <div id="footer">
             <p>2022 all rights reserved</p>
