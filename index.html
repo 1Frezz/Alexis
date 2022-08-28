@@ -19,6 +19,25 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nuestos Destinos!
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">FSL DE OCTUBRE</a></li>
+                  <li><a class="dropdown-item" href="#">SAN MARTIN DE LOS ANDES</a></li>
+                  <li><a class="dropdown-item" href="#">BARILOCHE</a></li>
+                  <li><a class="dropdown-item" href="#">MENDOZA CON TERMAS DE CACHEUTA</a></li>
+                  <li><a class="dropdown-item" href="#">TALAMPAYA</a></li>
+                  <li><a class="dropdown-item" href="#">TANDIL - MAR DEL PLATA</a></li>
+                  <li><a class="dropdown-item" href="#">VILLA CARLOS PAZ</a></li>
+                  <li><a class="dropdown-item" href="#">MERLO</a></li>
+                  <li><a class="dropdown-item" href="#">MAR DEL PLATA</a></li>
+                  <li><a class="dropdown-item" href="#">CATARATAS DEL IGUAZÚ</a></li>
+                  <li><a class="dropdown-item" href="#">SALTA</a></li>
+                  <li><a class="dropdown-item" href="#">NORTE CON CUESTA DE LIPAN</a></li>
+                </ul>
+              </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
@@ -36,7 +55,8 @@
                 </li>	
                 <li class="nav-item">
                   <a class="nav-link" href="#">Ayuda al Viajero</a>
-                </li>				
+                </li>
+                				
               </ul>
           </div>
         </div>
@@ -55,175 +75,223 @@
           <h1>Nuestros Destinos!</h1>
         </div>
 
-        <!-- Accordion -->
-
-<style>
-  @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
-*, *::after, *::before{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-}
-body{
-  font-family: "Poppins", sans-serif;
-}
-div.c{
-  position: relative;
-  margin:2em;
-}
-input{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  opacity:0;
-  visibility: 0;
-}
-h2{
-  color:black;
-  padding:1em;
-  position: relative;
-}
-label::before{
-  content:"";
-  display: inline-block;
-  border: 15px solid transparent;
-  border-left:20px solid white;
-}
-label{
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-div.p{
-  max-height:0px;
-  overflow: hidden;
-  transition:max-height 0.5s;
-  background-color: white;
-  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-div.p p {
-  padding:2em;
-}
-input:checked ~ h2 label::before{
-  border-left:15px solid transparent;
-  border-top:20px solid white;
-  margin-top:12px;
-  margin-right:10px;
-}
-input:checked ~ h2 ~ div.p{
-  max-height:100px;
-}
-a{
-  color:steelblue;
-}
-</style>
-
-        <div class="c">
-          <input type="checkbox" id="faq-1">
-          <h2><label for="faq-1">FSL DE OCTUBRE</label></h2>
-          <div class="p">
-            <p>This a very very simple accordion.</p>
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner d-flex ">
+            <div class="carousel-item active">
+              <div class="text-center">
+                <img src="/assets/img/fls-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/san-martin-de-los-andes-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/bariloche-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/mendoza-cacheuta-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/talampaya-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/admin-ajax.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/huerta-grande.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/merlo2.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/mdp-1.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/cataratas-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/salta-banner.jpg" class="rounded" alt="...">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center">
+                <img src="/assets/img/cuesta-del-lipan-1.jpg" class="rounded" alt="...">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-2">
-          <h2><label for="faq-2">SAN MARTIN DE LOS ANDES</label></h2>
-          <div class="p">
-            <p>Yes with pure CSS and HTML.</p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-3">
-          <h2><label for="faq-3">BARILOCHE</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-4">
-          <h2><label for="faq-4">MENDOZA CON TERMAS DE CACHEUTA</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-5">
-          <h2><label for="faq-5">TALAMPAYA</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-6">
-          <h2><label for="faq-6">TANDIL - MAR DEL PLATA</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-7">
-          <h2><label for="faq-7">VILLA CARLOS PAZ</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-8">
-          <h2><label for="faq-8">MERLO</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-9">
-          <h2><label for="faq-9">MAR DEL PLATA</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-10">
-          <h2><label for="faq-10">CATARATAS DEL IGUAZÚ</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-11">
-          <h2><label for="faq-11">SALTA</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
-        </div>
-        <div class="c">
-          <input type="checkbox" id="faq-12">
-          <h2><label for="faq-12">NORTE CON CUESTA DE LIPAN</label></h2>
-          <div class="p">
-            <p>I was inpired by an article on css-tricks. <a href="https://css-tricks.com/the-checkbox-hack/">link to article</a>
-            </p>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
     </main>
-        <div id="footer">
+    <footer id="footer"> 
+      <style>
+        #footer{background: #404040;padding: 0 0 30px 0;color: #fff;font-size: 14px}
+        #footer .footer-newsletter{padding: 50px 0;background: #404040}
+        #footer .footer-newsletter h4{font-size: 24px;margin: 0 0 20px 0;padding: 0;line-height: 1;font-weight: 600}
+        #footer .footer-newsletter form{margin-top: 30px;background: #fff;padding: 6px 10px;position: relative;border-radius: 50px}
+        #footer .footer-newsletter form input[type="email"]{border: 0;padding: 8px;width: calc(100% - 140px)}
+        #footer .footer-newsletter form input[type="submit"]{position: absolute;top: 0;right: 0;bottom: 0;border: 0;background: none;font-size: 16px;padding: 0 30px;margin: 3px;background: #e96b56;color: #fff;transition: 0.3s;border-radius: 50px}
+        #footer .footer-newsletter form input[type="submit"]:hover{background: #e6573f}
+        #footer .footer-top{background: #3b3b3b;border-top: 1px solid #474747;border-bottom: 1px solid #474747;padding: 60px 0 30px 0}
+        #footer .footer-top .footer-info{margin-bottom: 30px}
+        #footer .footer-top .footer-info h3{font-size: 18px;margin: 0 0 20px 0;padding: 2px 0 2px 0;line-height: 1;font-weight: 700}
+        #footer .footer-top .footer-info p{font-size: 14px;line-height: 24px;margin-bottom: 0;font-family: "Raleway", sans-serif;color: #fff}
+        #footer .footer-top .social-links a{font-size: 18px;display: inline-block;background: #545454;color: #fff;line-height: 1;padding: 8px 0;margin-right: 4px;border-radius: 50%;text-align: center;width: 36px;height: 36px;transition: 0.3s}
+        #footer .footer-top .social-links a:hover{background: #e96b56;color: #fff;text-decoration: none}
+        #footer .footer-top h4{font-size: 16px;font-weight: bold;color: #fff;text-transform: uppercase;position: relative;padding-bottom: 12px}
+        #footer .footer-top .footer-links{margin-bottom: 30px}
+        #footer .footer-top .footer-links ul{list-style: none;padding: 0;margin: 0}
+        #footer .footer-top .footer-links ul i{padding-right: 2px;color: #ec7f6d;font-size: 18px;line-height: 1}
+        #footer .footer-top .footer-links ul li{padding: 10px 0;display: flex;align-items: center}
+        #footer .footer-top .footer-links ul li:first-child{padding-top: 0}
+        #footer .footer-top .footer-links ul a{color: #fff;transition: 0.3s;display: inline-block;line-height: 1}
+        #footer .footer-top .footer-links ul a:hover{color: #e96b56}
+        #footer .footer-top .footer-contact{margin-bottom: 30px}
+        #footer .footer-top .footer-contact p{line-height: 26px}#footer .copyright{text-align: center;padding-top: 30px}#footer .credits{padding-top: 10px;text-align: center;font-size: 13px;color: #fff}
+      </style>
+      </div> <div class="footer-top"> 
+        <div class="container"> <div class="row"> 
+          <div class="col-lg-3 col-md-6 footer-links"> 
+            <h4>Páginas</h4>
+             <ul> 
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Horarios y Lugares de Ascenso</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Excursiones Opcionales</a></li> 
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Itinerarios</a></li> 
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Reservar</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Ayuda al Viajero</a></li>
+             </ul> 
+            </div> 
+            <div class="col-lg-3 col-md-6 footer-links"> 
+                <h4>Nuestos Destinos</h4>
+               <ul> 
+                <li><i class="bx bx-chevron-right"></i> <a href="#">FSL DE OCTUBRE</a></li> 
+                <li><i class="bx bx-chevron-right"></i> <a href="#">SAN MARTIN DE LOS ANDES</a></li> 
+                <li><i class="bx bx-chevron-right"></i> <a href="#">BARILOCHE</a></li> 
+                <li><i class="bx bx-chevron-right"></i> <a href="#">MENDOZA CON TERMAS DE CACHEUTA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">TALAMPAYA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">TANDIL - MAR DEL PLATA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">VILLA CARLOS PAZ</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">MERLO</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">MAR DEL PLATA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">CATARATAS DEL IGUAZÚ</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">SALTA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">NORTE CON CUESTA DE LIPAN</a></li>
+               </ul> 
+              </div> 
+              <!-- <div class="col-lg-3 col-md-6 footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.855450391686!2d-58.38360173022461!3d-34.60507529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd8391b091%3A0x2a90ef6b9acfdc2d!2sFlorida%20253%2C%20C1005AAE%20CABA!5e0!3m2!1ses-419!2sar!4v1661703953740!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <br>
+                <h4>Dirección: Florida 253 - 4° Piso - Oficina C</h4>
+              </div> -->
+              <style>
+                footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+              </style>
+              
+              <div class="col-lg-3 col-md-6 footer-contact ">
+                <div class="">
+                  <h5 class="text-md-right">Contact Us</h5>
+                  <br>
+              </div>
+                  <form method="post" id="form">
+                    <fieldset class="form-group">
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Coloque su Nombre:" name="name">
+                  </fieldset>
+                      <fieldset class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Coloque su email:" name="email">
+                      </fieldset>
+                      <fieldset class="form-group">
+                          <textarea class="form-control" id="exampleMessage" placeholder="Escriba su consulta!" name="message"></textarea>
+                      </fieldset>
+                      <fieldset class="form-group text-xs-right">
+                          <button type="submit" class="btn btn-light">Enviar!</button>
+                      </fieldset>
+                  </form>
+                  <a href="mailto:fac.demarco37@gmail.com" id="mailtk">mail</a>
+              </div>
+              <style>
+                #mailtk {
+                  opacity: 0;
+                }
+              </style>
+              <script>
+                 const $form = document.querySelector('#form')
+                 const $btnMailto = document.querySelector('#mailtk')
+                 
+
+                 $form.addEventListener('submit', handleSubmit)
+
+              function handleSubmit(event) {
+                 event.preventDefault()
+                 const form = new FormData(this)
+                 console.log(form.get('name'))
+                 $btnMailto.setAttribute('href', `mailto:fac.demarco37@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+                 $btnMailto.click()
+              }
+              </script>
+            
+              <!-- <div class="col-lg-3 col-md-6 footer-contact"> -->
+                  
+</footer>
+        <!-- <div id="footer">
             <p>2022 all rights reserved</p>
             <div class="redes">
             <a href="https://www.facebook.com/profile.php?id=100013127329230">Facebook</a><br>
             <a href="https://www.instagram.com/alexis_evt/">Instagram</a><br>
             <a href="https://api.whatsapp.com/send/?phone=541121721486&text&type=phone_number&app_absent=0">Whatsapp</a>
         </div>
-        </div>
+        </div> -->
 </body>
 </html>
