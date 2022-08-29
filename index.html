@@ -206,82 +206,59 @@
                 <li><i class="bx bx-chevron-right"></i> <a href="#">NORTE CON CUESTA DE LIPAN</a></li>
                </ul> 
               </div> 
-              <!-- <div class="col-lg-3 col-md-6 footer-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.855450391686!2d-58.38360173022461!3d-34.60507529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd8391b091%3A0x2a90ef6b9acfdc2d!2sFlorida%20253%2C%20C1005AAE%20CABA!5e0!3m2!1ses-419!2sar!4v1661703953740!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="col-lg-3 col-md-6 footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1661796750037!6m8!1m7!1sACSenhV94O4xTkA4PQDYcA!2m2!1d-34.60500850186995!2d-58.3751212974803!3f118.10530418471629!4f0.8989996892120473!5f0.4000000000000002" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br>
                 <br>
                 <h4>Dirección: Florida 253 - 4° Piso - Oficina C</h4>
-              </div> -->
-              <style>
-                footer {
-  padding-top: 30px;
-  background-color: #292c2f;
-  color: #bbb;
-}
+              </div>
+</style>
 
-footer a {
-  color: #999;
-  text-decoration:none;
-}
-
-footer a:hover, footer a:focus {
-  color: #aaa;
-  text-decoration:none;
-  border-bottom:1px dotted #999;
-}
-
-footer .form-control {
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
-}
-              </style>
+<!-- <div class="col-12">
+  <form method="POST" action="contacto.php">
+      <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input name="nombre" required type="text" id="nombre"
+              class="form-control" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+          <label for="correo">Correo electrónico</label>
+          <input name="correo" required type="email" id="correo"
+              class="form-control" placeholder="Tu correo electrónico">
+      </div>
+      <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea required placeholder="Escribe tu mensaje"
+              class="form-control" name="mensaje" id="mensaje"
+              cols="30" rows="5"></textarea>
+      </div>
+      <div class="form-group">
+          <button class="btn-success btn" type="submit">
+              Enviar
+          </button>
+      </div>
+  </form>
+</div> -->
               
               <div class="col-lg-3 col-md-6 footer-contact ">
                 <div class="">
-                  <h5 class="text-md-right">Contact Us</h5>
+                  <h5 class="text-md-right">Contáctanos!</h5>
                   <br>
               </div>
-                  <form method="post" id="form">
+                  <form method="post" action="contacto.php">
                     <fieldset class="form-group">
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Coloque su Nombre:" name="name">
+                      <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Coloque su Nombre:">
                   </fieldset>
                       <fieldset class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Coloque su email:" name="email">
+                          <input required type="email" name="correo" class="form-control" id="correo" placeholder="Coloque su email:" name="email">
                       </fieldset>
                       <fieldset class="form-group">
-                          <textarea class="form-control" id="exampleMessage" placeholder="Escriba su consulta!" name="message"></textarea>
+                          <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escriba su consulta!" name="message"></textarea>
                       </fieldset>
                       <fieldset class="form-group text-xs-right">
                           <button type="submit" class="btn btn-light">Enviar!</button>
                       </fieldset>
                   </form>
-                  <a href="mailto:fac.demarco37@gmail.com" id="mailtk">mail</a>
-              </div>
-              <style>
-                #mailtk {
-                  opacity: 0;
-                }
-              </style>
-              <script>
-                 const $form = document.querySelector('#form')
-                 const $btnMailto = document.querySelector('#mailtk')
-                 
-
-                 $form.addEventListener('submit', handleSubmit)
-
-              function handleSubmit(event) {
-                 event.preventDefault()
-                 const form = new FormData(this)
-                 console.log(form.get('name'))
-                 $btnMailto.setAttribute('href', `mailto:fac.demarco37@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-                 $btnMailto.click()
-              }
-              </script>
-            
               <!-- <div class="col-lg-3 col-md-6 footer-contact"> -->
                   
 </footer>
